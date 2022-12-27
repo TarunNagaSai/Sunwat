@@ -1,6 +1,6 @@
 # sunwat
 
-A new Flutter project.
+Sunwat is a mobile app which is used for the water filter plants
 
 ## Getting Started
 
