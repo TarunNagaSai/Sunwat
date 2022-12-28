@@ -15,7 +15,7 @@ void main() async {
       popGesture: Get.isPopGestureEnable,
       getPages: GetxRoutes.routes,
       theme: AppThemes.lightTheme,
-      initialRoute: GetxRoutes.splash,
+      initialRoute: GetxRoutes.plantNo,
     ),
   );
 }

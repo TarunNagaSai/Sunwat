@@ -103,6 +103,8 @@ class AppThemes {
     surface: Colors.white,
   );
 
-  static final ThemeData lightTheme =
-      ThemeData.from(colorScheme: lightColorScheme, textTheme: textTheme);
+  static final ThemeData lightTheme = ThemeData.from(
+    colorScheme: lightColorScheme,
+    textTheme: textTheme,
+  ).copyWith(appBarTheme: const AppBarTheme(backgroundColor: Colors.blue));
 }
