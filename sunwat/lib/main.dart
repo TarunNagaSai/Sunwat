@@ -4,6 +4,8 @@ import 'package:get_storage/get_storage.dart';
 import 'package:sunwat/core/routes.dart';
 import 'package:sunwat/core/theme.dart';
 
+import 'UI/screens/landing/splash_screen.dart';
+
 void main() async {
   await GetStorage.init();
   runApp(
@@ -14,8 +16,9 @@ void main() async {
       opaqueRoute: Get.isOpaqueRouteDefault,
       popGesture: Get.isPopGestureEnable,
       getPages: GetxRoutes.routes,
+      home: const SplashScreen(),
       theme: AppThemes.lightTheme,
-      initialRoute: GetxRoutes.plantNo,
+      //initialRoute: GetxRoutes.login,
     ),
   );
 }

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/route_manager.dart';
+import 'package:sunwat/core/dimensions.dart';
 import 'package:sunwat/core/routes.dart';
 
 class PlantNoScreen extends StatelessWidget {
@@ -11,11 +12,12 @@ class PlantNoScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: const Center(
-          child: Text(
-            "Icons",
-            style: TextStyle(
-              fontSize: 16,
+        leading: SizedBox(
+          height: 50,
+          child: Padding(
+            padding: const EdgeInsets.only(left: Dimensions.paddingSizeDefault),
+            child: Center(
+              child: Image.asset("image/splash.png")
             ),
           ),
         ),
@@ -46,7 +48,7 @@ class PlantNoScreen extends StatelessWidget {
             child: Text(
               "Please Click on RO Plant Report to enter detials",
               style: TextStyle(
-                fontSize: 16,
+                fontSize: Dimensions.fontSizeLarge,
               ),
             ),
           ),
@@ -77,7 +79,7 @@ class PlantNoScreen extends StatelessWidget {
             child: Text(
               "Plant Reports on Date:08/12/2022 by User: SEKHAR",
               style: TextStyle(
-                fontSize: 16,
+                fontSize: Dimensions.fontSizeLarge,
               ),
             ),
           ),
@@ -99,7 +101,7 @@ class PlantNoScreen extends StatelessWidget {
                   const Text(
                     "S.No. RO Plant Name",
                     style: TextStyle(
-                      fontSize: 16,
+                      fontSize: Dimensions.fontSizeLarge,
                     ),
                   ),
                   const SizedBox(
