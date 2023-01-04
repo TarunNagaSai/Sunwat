@@ -2,6 +2,7 @@ import 'package:get/get_navigation/src/routes/get_route.dart';
 import 'package:sunwat/UI/screens/landing/splash_screen.dart';
 import 'package:sunwat/UI/screens/ro_plant/plant_no_screen.dart';
 import 'package:sunwat/UI/screens/ro_plant/report_form.dart';
+import 'package:sunwat/controllers/bindinges.dart';
 
 import '../UI/screens/forgotpassword/forgotpassword.dart';
 import '../UI/screens/login/login.dart';
@@ -38,6 +39,7 @@ class GetxRoutes {
     GetPage(
       name: roPlantReport,
       page: () => const RoPlantReportScreen(),
+      binding: ReportBindings(),
     ),
   ];
 }
