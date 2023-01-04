@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
+import 'package:sunwat/controllers/bindinges.dart';
 import 'package:sunwat/core/routes.dart';
 import 'package:sunwat/core/theme.dart';
 
@@ -18,6 +19,7 @@ void main() async {
       getPages: GetxRoutes.routes,
       home: const SplashScreen(),
       theme: AppThemes.lightTheme,
+      initialBinding: AuthBindings(),
       //initialRoute: GetxRoutes.login,
     ),
   );

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sunwat/core/colors_constants.dart';
 
 class AppThemes {
   static const sunwatNavyBlue = Color(0xFF0B0F1A),
@@ -13,6 +14,14 @@ class AppThemes {
       sunwatPeach = Color(0xFFF8D5B8),
       sunwatMint = Color(0xff94b7bb),
       neutral600 = Color(0xFF4B5768);
+
+  static BoxDecoration decoration = const BoxDecoration(
+    gradient: LinearGradient(
+      colors: [ColorsConstants.blueprimary, ColorsConstants.white],
+      begin: Alignment.topCenter,
+      end: Alignment.center,
+    ),
+  );
 
   static get textTheme => const TextTheme(
         /// heading with no spacing ///

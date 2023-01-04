@@ -25,9 +25,11 @@ dev_dependencies:
 
 flutter:  
   uses-material-design: true
-assets:
-  - assets/
-  - assets/image/splash.png
+
+
+  assets:
+    - assets/
+    - assets/image/
 
   
   

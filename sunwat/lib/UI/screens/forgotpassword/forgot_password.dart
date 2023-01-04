@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../../../core/dimensions.dart';
@@ -79,11 +78,15 @@ class ForgotPasswordScreenWidgetState extends State<ForgotPasswordScreen> {
               width: MediaQuery.of(context).size.width * 0.9,
               child: ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                    foregroundColor: Colors.white,
-                    backgroundColor: Colors.indigo, // foreground
-                    padding: const EdgeInsets.all(24.0),
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(15.0))),
+                  foregroundColor: Colors.white,
+                  backgroundColor: Colors.indigo, // foreground
+                  padding: const EdgeInsets.all(24.0),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(
+                      15.0,
+                    ),
+                  ),
+                ),
                 onPressed: () {},
                 child: const Text('Log In',
                     style: TextStyle(

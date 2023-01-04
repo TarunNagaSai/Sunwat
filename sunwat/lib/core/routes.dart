@@ -4,9 +4,8 @@ import 'package:sunwat/UI/screens/ro_plant/plant_no_screen.dart';
 import 'package:sunwat/UI/screens/ro_plant/report_form.dart';
 import 'package:sunwat/controllers/bindinges.dart';
 
-import '../UI/screens/forgotpassword/forgotpassword.dart';
+import '../UI/screens/forgotpassword/forgot_password.dart';
 import '../UI/screens/login/login.dart';
-
 
 class GetxRoutes {
   /// All the routes name are initalized here and are assigned to the
@@ -25,10 +24,12 @@ class GetxRoutes {
     GetPage(
       name: splash,
       page: () => const SplashScreen(),
-    ),GetPage(
+    ),
+    GetPage(
       name: login,
       page: () => const LoginScreen(),
-    ),GetPage(
+    ),
+    GetPage(
       name: forgotPassword,
       page: () => const ForgotPasswordScreen(),
     ),

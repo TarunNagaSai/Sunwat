@@ -1,4 +1,6 @@
 import 'dart:convert';
+import 'package:sunwat/core/constants.dart';
+
 import 'auth_utils.dart';
 import 'log_helper.dart';
 import 'package:dio/dio.dart';
@@ -8,9 +10,10 @@ import 'package:flutter/foundation.dart';
 Future<Dio> getDio() async {
   var token = getToken();
   var options = BaseOptions(
-    /// baseUrl: 'https:///www.xx.com/api',
+    baseUrl: AppConstants.apiUrl,
     connectTimeout: 5000 * 50,
-    receiveTimeout: 3000 * 40, contentType: "application/json",
+    receiveTimeout: 3000 * 40,
+    contentType: "application/json",
   );
   var dio = Dio(options);
   dio.interceptors.add(InterceptorsWrapper(onRequest: (options, handler) {

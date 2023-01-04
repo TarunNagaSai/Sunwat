@@ -1,4 +1,3 @@
-import 'dart:ui';
 import 'package:flutter/material.dart';
 
 class ColorsConstants {
@@ -16,20 +15,20 @@ class ColorsConstants {
   static const gray500 = Color(0xffb2b8bd);
   static const gray600 = Color(0xFF98a1ab);
   static const gray700 = Color(0xFF979797);
-  static const gray800 =  Color(0xFF7A7A7A);
+  static const gray800 = Color(0xFF7A7A7A);
   static const gray900 = Color(0xFF4d5054);
 
   static const orange100 = Color(0xFFFFA53E);
   static const orange200 = Color(0xFFFFAA47);
-  static const pink=  Color(0xFFFFECDF);
-  static const cardColor=  Color(0xFFF3F3F3);
-  static const cardBgColor=  Color(0xFF121212);
-  static const cardHintColor=  Color(0xFFE7F6F8);
-  static const focusColor =  Color(0xFFADC4C8);
-  static const lightThemeHintColor =  Color(0xFF52575C);
-  static const blue =  Color(0xFF0d47a1);
-  static const blue100 =  Color(0xFF1565c0);
-  static const blue200=  Color(0xFF009AEE);
-  static const blueprimary=  Color(0xFF64B5F6);
-  static const red=  Colors.red;
+  static const pink = Color(0xFFFFECDF);
+  static const cardColor = Color(0xFFF3F3F3);
+  static const cardBgColor = Color(0xFF121212);
+  static const cardHintColor = Color(0xFFE7F6F8);
+  static const focusColor = Color(0xFFADC4C8);
+  static const lightThemeHintColor = Color(0xFF52575C);
+  static const blue = Color(0xFF0d47a1);
+  static const blue100 = Color(0xFF1565c0);
+  static const blue200 = Color(0xFF009AEE);
+  static const blueprimary = Color(0xFF64B5F6);
+  static const red = Colors.red;
 }
