@@ -3,11 +3,9 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sunwat/controllers/auth/auth_controller.dart';
-import 'package:sunwat/core/auth_utils.dart';
+
 import 'package:sunwat/core/routes.dart';
 import 'package:sunwat/core/theme.dart';
-
-import '../../../core/colors_constants.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({Key? key}) : super(key: key);
