@@ -2,19 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:sunwat/core/colors_constants.dart';
 
 class AppThemes {
-  static const sunwatNavyBlue = Color(0xFF0B0F1A),
-      sunwatDarkBlue = Color(0xFF0C1D31),
-      sunwatBlue = Color(0xFF0F2743),
-      sunwatNewBlue = Color(0xFF002E5D),
-      sunwatDarkGrey = Color(0xFFABABAB),
-      sunwatGold = Color(0xFFFF8200),
-      sunwatGrey = Color(0xFFC6C6C8),
-      sunwatError = Color(0xFFDC2626),
-      sunwatScaffold = Color(0xFFFFFFFF),
-      sunwatPeach = Color(0xFFF8D5B8),
-      sunwatMint = Color(0xff94b7bb),
-      neutral600 = Color(0xFF4B5768);
-
   static BoxDecoration decoration = const BoxDecoration(
     gradient: LinearGradient(
       colors: [ColorsConstants.blueprimary, ColorsConstants.white],
@@ -105,9 +92,6 @@ class AppThemes {
       );
   static final ColorScheme lightColorScheme =
       const ColorScheme.light().copyWith(
-    primary: sunwatBlue,
-    secondary: sunwatNavyBlue,
-    error: sunwatError,
     background: Colors.grey.shade100,
     surface: Colors.white,
   );
@@ -115,5 +99,9 @@ class AppThemes {
   static final ThemeData lightTheme = ThemeData.from(
     colorScheme: lightColorScheme,
     textTheme: textTheme,
-  ).copyWith(appBarTheme: const AppBarTheme(backgroundColor: Colors.blue));
+  ).copyWith(
+    appBarTheme: const AppBarTheme(
+      backgroundColor: Colors.blue,
+    ),
+  );
 }

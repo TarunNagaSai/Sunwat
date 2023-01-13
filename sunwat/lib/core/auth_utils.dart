@@ -43,7 +43,7 @@ Future<bool> saveUserData(UserData userData) async {
 
 dynamic getUserData() {
   try {
-    var userData = box.read<UserData>("userData");
+    var userData = box.read("userData");
     return userData;
   } catch (e) {
     logger.e(e);

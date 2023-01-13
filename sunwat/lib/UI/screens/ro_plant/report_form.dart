@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get_state_manager/get_state_manager.dart';
+import 'package:image_picker/image_picker.dart';
+import 'package:intl/intl.dart';
 import 'package:sunwat/UI/widgets/report_tile.dart';
 import 'package:sunwat/controllers/report_controller.dart';
 import 'package:sunwat/core/theme.dart';
@@ -12,12 +14,18 @@ class RoPlantReportScreen extends StatefulWidget {
 }
 
 class _RoPlantReportScreenState extends State<RoPlantReportScreen> {
+  final ImagePicker _picker = ImagePicker();
+
+  List<XFile> photos = [];
+
   final GlobalKey<FormState> planReportFormKey = GlobalKey<FormState>();
+
   TextEditingController plantName = TextEditingController();
   TextEditingController plantAddress = TextEditingController();
   TextEditingController pointsToVerify = TextEditingController();
   TextEditingController plantRemark = TextEditingController();
   TextEditingController plantPhotos = TextEditingController();
+  DateTime dob = DateTime.now();
 
   @override
   Widget build(BuildContext context) {
@@ -131,9 +139,9 @@ class _RoPlantReportScreenState extends State<RoPlantReportScreen> {
                   const SizedBox(
                     height: 12,
                   ),
-                  const Text(
-                    "We hearby certify that the Ro Plant Report taken by M/s. Escro Engineer Service on dated 08/12/2022.",
-                    style: TextStyle(
+                  Text(
+                    "We hearby certify that the Ro Plant Report taken by M/s. Escro Engineer Service on dated ${DateFormat.yMd().format(dob)}.",
+                    style: const TextStyle(
                       fontSize: 12,
                     ),
                   ),
@@ -187,9 +195,9 @@ class _RoPlantReportScreenState extends State<RoPlantReportScreen> {
                   const SizedBox(
                     height: 12,
                   ),
-                  const Text(
-                    "I confirm that the Ro Plant Reports have been taken on dated 08/12/2022",
-                    style: TextStyle(
+                  Text(
+                    "I confirm that the Ro Plant Reports have been taken on dated ${DateFormat.yMd().format(dob)}",
+                    style: const TextStyle(
                       fontSize: 12,
                     ),
                   ),
@@ -281,6 +289,19 @@ class _RoPlantReportScreenState extends State<RoPlantReportScreen> {
               ),
             ),
           ),
+        ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () async {
+          XFile? photo = await _picker.pickImage(
+            source: ImageSource.camera,
+          );
+          if (photo != null) {
+            photos.add(photo);
+          }
+        },
+        child: const Icon(
+          Icons.camera,
         ),
       ),
     );
